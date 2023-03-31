@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Resim Büyült-Küçült</title>
+<script type="text/javascript">
+function azalt()
+{
+	document.getElementById("resim").style.width="100px";
+	document.getElementById("resim").style.height="100px";
+}
+function arttir()
+{
+	document.getElementById("resim").style.width="250px";
+	document.getElementById("resim").style.height="250px";
+}
+</script>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post">
+  <p>
+    <input type="button"  value="&lt;&lt;" onClick="azalt()">
+    <input type="button"  value="&gt;&gt;" onClick="arttir()">
+  </p>
+  <p><img id="resim" src="erhan.jpg" width="250" height="250" /></p>
+</form>
+</body>
+</html>
